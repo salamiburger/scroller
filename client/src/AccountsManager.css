@@ -1,0 +1,154 @@
+.accounts-manager {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.accounts-manager h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+  color: #333;
+}
+
+.message {
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.message:contains("✅") {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.message:contains("❌") {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.accounts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.account-card {
+  background: white;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.account-card:hover {
+  border-color: #007bff;
+  box-shadow: 0 4px 16px rgba(0, 123, 255, 0.2);
+}
+
+.account-icon {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.account-card h3 {
+  margin: 15px 0;
+  font-size: 20px;
+  color: #333;
+}
+
+.account-card p {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.connected {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.btn-connect,
+.btn-disconnect {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.btn-connect {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.btn-connect:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.btn-disconnect {
+  background: #dc3545;
+  color: white;
+}
+
+.btn-disconnect:hover:not(:disabled) {
+  background: #c82333;
+}
+
+.btn-connect:disabled,
+.btn-disconnect:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.fetch-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.fetch-section h3 {
+  margin-bottom: 10px;
+  color: white;
+}
+
+.fetch-section p {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.btn-fetch {
+  padding: 12px 30px;
+  background: white;
+  color: #667eea;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-fetch:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn-fetch:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
