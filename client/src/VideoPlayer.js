@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { getRandomVideo } from '../services/api';
+import { getRandomVideo } from './services/api';
 
 function VideoPlayer() {
   const [video, setVideo] = useState(null);
